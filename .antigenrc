@@ -1,0 +1,21 @@
+# shellcheck shell=bash
+
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# Load bundles
+antigen bundles <<EOBUNDLES
+  autojump
+  aliases
+  brew
+  colored-man-pages
+  zsh-users/zsh-completions
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+
+# Select theme
+antigen theme romkatv/powerlevel10k
+
+# Tell Antigen that we're done
+antigen apply
